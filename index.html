@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>Weather It !</title>
+  <link rel="icon" href="weather_it_logo.jpg">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="weather_it.css">
+  <script src="weather_it.js"></script>
+  
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><img src="weather_it_logo.jpg" alt="Whether It" width="70" height="70"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#customer">UPDATES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+<h1> Weather it ! </h1>
+<p> Check the weather of your city</p>
+<form class="form-inline" >
+
+<input type="text" class="form-control" size="50"  id="city-name" placeholder="Eg. Delhi or Bangalore"/>
+</form>
+<div class="row">
+            
+			<div class="span6 offset1">
+			<input type="button" class="btn-primary btn btn-metric-current" value="Current Weather"/>
+			<input type="button" class="btn-warning btn btn-metric" value="Forecast for next 5 days"/>		
+			
+		    </div>
+</div>
+
+<div id="currentlog"></div>
+<div id="log" style="width:1600px;"></div>
+<div id="graph" style="width:1600px;"></div>
+  <div id="customer" class="container">
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Wherever you go, no matter what the weather, always bring your own sunshine." <br><span style="font-style:normal;">Anthony J. D'Angelo</span></h4>
+      </div>
+      <div class="item">
+        <h4>"There is really no such thing as bad weather, only different kinds of good weather." 
+<br><span style="font-style:normal;">John Ruskin</span></h4>
+      </div>
+      <div class="item">
+        <h4>"A bank is a place where they lend you an umbrella in fair weather and ask for it back when it begins to rain." 
+<br><span style="font-style:normal;">Robert Frost</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+</div>
+<footer class="container-fluid text-center ">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Designed & Developed By Shubhankar Banerjee contact at shubhankar@outlook.com</p> 
+</footer>
+
+
+
+
+</body>
+</html>
