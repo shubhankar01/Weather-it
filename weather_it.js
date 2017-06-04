@@ -68,6 +68,9 @@ var openWeatherApiKey = '3f6b34a3094815e31014f99a779eb25d',
 		}
 		
 		var prepareDatacurrent=function(units){
+		    var temp=1
+		    var max=0
+		    var min=1
 		    var cityName = $('#city-name').val()
 			if (cityName!= ''){
 				cityName = cityName.trim()
